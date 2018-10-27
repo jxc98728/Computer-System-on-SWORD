@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../MCPU.srcs/sources_1/ip/FONT1/sim/FONT1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

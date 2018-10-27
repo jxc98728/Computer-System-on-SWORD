@@ -1,0 +1,7 @@
+Running: xsim.dir/test_unsigned_divisor_behav/xsimk.exe -simmode gui -wdb test_unsigned_divisor_behav.wdb -simrunnum 0 -socket 5566
+Design successfully loaded
+Design Loading Memory Usage: 4960 KB (Peak: 4960 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 5564 KB (Peak: 5564 KB)
+Simulation CPU Usage: 30 ms

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../MCPU.srcs/sources_1/ip/Unsigned_Multiplier/sim/Unsigned_Multiplier.vhd" \
+
+nosort

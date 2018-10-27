@@ -1,0 +1,901 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Sep 18 18:30:37 2018
+# Process ID: 13288
+# Current directory: E:/Verilog Project/Architecture/MCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11436 E:\Verilog Project\Architecture\MCPU\MCPU.xpr
+# Log file: E:/Verilog Project/Architecture/MCPU/vivado.log
+# Journal file: E:/Verilog Project/Architecture/MCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Verilog Project/Architecture/MCPU/MCPU.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/XiLinx/Vivado/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 883.516 ; gain = 146.691
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/test_ps2.v}}] -no_script -reset -force -quiet
+remove_files  {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/test_ps2.v}}
+file delete -force {E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/test_ps2.v}
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/SWORD.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/SWORD.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1803.656 ; gain = 255.527
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw
+export_ip_user_files -of_objects  [get_files c:/Users/T460P/Desktop/NewShell.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/T460P/Desktop/NewShell.coe
+create_ip -name div_gen -vendor xilinx.com -library ip -version 5.1 -module_name div_gen_0 -dir {e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip}
+set_property -dict [list CONFIG.algorithm_type {Radix2} CONFIG.dividend_and_quotient_width {32} CONFIG.divisor_width {32} CONFIG.clocks_per_division {1} CONFIG.latency_configuration {Manual} CONFIG.latency {0} CONFIG.remainder_type {Remainder} CONFIG.fractional_width {32}] [get_ips div_gen_0]
+generate_target {instantiation_template} [get_files {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'div_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'div_gen_0'...
+catch { config_ip_cache -export [get_ips -all div_gen_0] }
+export_ip_user_files -of_objects [get_files {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}]
+launch_runs -jobs 4 div_gen_0_synth_1
+[Tue Sep 18 18:47:47 2018] Launched div_gen_0_synth_1...
+Run output will be captured here: E:/Verilog Project/Architecture/MCPU/MCPU.runs/div_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}] -directory {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files/sim_scripts} -ip_user_files_dir {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files} -ipstatic_source_dir {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/modelsim} {questa=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/questa} {riviera=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/riviera} {activehdl=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v} w ]
+add_files -fileset sim_1 {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v}}
+update_compile_order -fileset sim_1
+set_property top signed_divider_test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_divider_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj signed_divider_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signed_divider_test
+ERROR: [VRFC 10-91] finish is not declared [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v:58]
+ERROR: [VRFC 10-2787] module signed_divider_test ignored due to previous errors [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_divider_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj signed_divider_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signed_divider_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot signed_divider_test_behav xil_defaultlib.signed_divider_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Signed_Divider> not found while processing module instance <D0> [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1914.168 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_divider_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj signed_divider_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot signed_divider_test_behav xil_defaultlib.signed_divider_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Signed_Divider> not found while processing module instance <D0> [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_divider_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj signed_divider_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signed_divider_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot signed_divider_test_behav xil_defaultlib.signed_divider_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Signed_Divider> not found while processing module instance <D0> [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [Device 21-403] Loading part xc7k325tffg676-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/NewShell.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/NewShell.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/NewShell.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/NewShell.coe'
+set_property -dict [list CONFIG.Coe_File {E:/Verilog Project/Architecture/Material/NewShell.coe}] [get_ips RAM_B]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/NewShell.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/NewShell.coe'
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_divider_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj signed_divider_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot signed_divider_test_behav xil_defaultlib.signed_divider_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Signed_Divider> not found while processing module instance <D0> [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v:36]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+reset_run RAM_B_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Verilog Project/Architecture/MCPU/MCPU.runs/RAM_B_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Text_RAM/Text_RAM.xci' is already up-to-date
+[Tue Sep 18 19:10:12 2018] Launched RAM_B_synth_1, synth_1...
+Run output will be captured here:
+RAM_B_synth_1: E:/Verilog Project/Architecture/MCPU/MCPU.runs/RAM_B_synth_1/runme.log
+synth_1: E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/runme.log
+[Tue Sep 18 19:10:12 2018] Launched impl_1...
+Run output will be captured here: E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset div_gen_0 {{e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Verilog Project/Architecture/MCPU/MCPU.runs/div_gen_0_synth_1
+
+INFO: [Project 1-386] Moving file 'e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0/div_gen_0.xci' from fileset 'div_gen_0' to fileset 'sources_1'.
+file delete -force {e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/div_gen_0}
+export_ip_user_files -of_objects  [get_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v}}
+file delete -force {E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_divider_test.v}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/SWORD.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1435] Device xc7k325t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/SWORD.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2428.246 ; gain = 246.535
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/NewShell.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/NewShell.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/NewShell.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/NewShell.coe'
+set_property -dict [list CONFIG.Coe_File {E:/Verilog Project/Architecture/Material/NewShell.coe}] [get_ips RAM_B]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/NewShell.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/NewShell.coe'
+generate_target all [get_files  {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/RAM_B/RAM_B.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'RAM_B'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'RAM_B'...
+catch { config_ip_cache -export [get_ips -all RAM_B] }
+export_ip_user_files -of_objects [get_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/RAM_B/RAM_B.xci}}] -no_script -sync -force -quiet
+reset_run RAM_B_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Verilog Project/Architecture/MCPU/MCPU.runs/RAM_B_synth_1
+
+launch_runs -jobs 4 RAM_B_synth_1
+[Tue Sep 18 19:53:24 2018] Launched RAM_B_synth_1...
+Run output will be captured here: E:/Verilog Project/Architecture/MCPU/MCPU.runs/RAM_B_synth_1/runme.log
+export_simulation -of_objects [get_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/RAM_B/RAM_B.xci}}] -directory {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files/sim_scripts} -ip_user_files_dir {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files} -ipstatic_source_dir {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/modelsim} {questa=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/questa} {riviera=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/riviera} {activehdl=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/background2.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/background2.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/background2.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/background2.coe'
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {E:/Verilog Project/Architecture/Material/background2.coe}] [get_ips VRAM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Verilog Project/Architecture/Material/background2.coe' provided. It will be converted relative to IP Instance files '../../../../../Material/background2.coe'
+generate_target all [get_files  {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/VRAM/VRAM.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'VRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'VRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'VRAM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'VRAM'...
+generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 2510.625 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all VRAM] }
+export_ip_user_files -of_objects [get_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/VRAM/VRAM.xci}}] -no_script -sync -force -quiet
+reset_run VRAM_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Verilog Project/Architecture/MCPU/MCPU.runs/VRAM_synth_1
+
+launch_runs -jobs 4 VRAM_synth_1
+[Tue Sep 18 19:54:42 2018] Launched VRAM_synth_1...
+Run output will be captured here: E:/Verilog Project/Architecture/MCPU/MCPU.runs/VRAM_synth_1/runme.log
+export_simulation -of_objects [get_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/VRAM/VRAM.xci}}] -directory {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files/sim_scripts} -ip_user_files_dir {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files} -ipstatic_source_dir {E:/Verilog Project/Architecture/MCPU/MCPU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/modelsim} {questa=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/questa} {riviera=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/riviera} {activehdl=E:/Verilog Project/Architecture/MCPU/MCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Text_RAM/Text_RAM.xci' is already up-to-date
+[Tue Sep 18 20:01:08 2018] Launched synth_1...
+Run output will be captured here: E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/runme.log
+[Tue Sep 18 20:01:08 2018] Launched impl_1...
+Run output will be captured here: E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.1
+  **** Build date : Apr  4 2018-19:32:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/SWORD.bit} [get_hw_devices xc7k325t_0]
+current_hw_device [get_hw_devices xc7k325t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {E:/Verilog Project/Architecture/MCPU/MCPU.runs/impl_1/SWORD.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2760.344 ; gain = 249.719
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k325t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close [ open {E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Signed_Divider.v} w ]
+add_files {{E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Signed_Divider.v}}
+update_compile_order -fileset sources_1
+set_property top test_unsigned_divisor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unsigned_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_unsigned_divisor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Unsigned_Divider
+Compiling module xil_defaultlib.test_unsigned_divisor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_unsigned_divisor_behav
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/Verilog -notrace
+couldn't read file "E:/Verilog": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 18 20:15:59 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2790.547 ; gain = 26.609
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unsigned_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_unsigned_divisor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Unsigned_Divider
+Compiling module xil_defaultlib.test_unsigned_divisor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_unsigned_divisor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2790.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unsigned_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_unsigned_divisor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Unsigned_Divider
+Compiling module xil_defaultlib.test_unsigned_divisor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_unsigned_divisor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2790.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unsigned_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_unsigned_divisor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Unsigned_Divider
+Compiling module xil_defaultlib.test_unsigned_divisor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_unsigned_divisor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2793.563 ; gain = 2.328
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unsigned_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_unsigned_divisor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Unsigned_Divider
+Compiling module xil_defaultlib.test_unsigned_divisor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_unsigned_divisor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2794.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2794.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/XiLinx/Vivado/Vivado/2018.1/data/xsim/ip/xsim_ip.ini' copied to run dir:'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_unsigned_divisor' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/FONT.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/CharROM.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/RAM_B.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/NewShell.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/background2.coe'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/VRAM.mif'
+INFO: [SIM-utils-43] Exported 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/MCPU.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_unsigned_divisor_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Unsigned_Divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_unsigned_divisor
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/XiLinx/Vivado/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 53292a3c809c40f7a7ab1fb2a593c675 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_unsigned_divisor_behav xil_defaultlib.test_unsigned_divisor xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Unsigned_Divider
+Compiling module xil_defaultlib.test_unsigned_divisor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_unsigned_divisor_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_unsigned_divisor_behav -key {Behavioral:sim_1:Functional:test_unsigned_divisor} -tclbatch {test_unsigned_divisor.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+source test_unsigned_divisor.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_unsigned_divisor_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2794.430 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 18 20:50:42 2018...

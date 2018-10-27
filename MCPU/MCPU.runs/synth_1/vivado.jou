@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Sep 24 15:34:59 2018
+# Process ID: 12192
+# Current directory: E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1
+# Command line: vivado.exe -log SWORD.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SWORD.tcl
+# Log file: E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/SWORD.vds
+# Journal file: E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SWORD.tcl -notrace

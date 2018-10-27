@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Sep 18 19:54:46 2018
+# Process ID: 12480
+# Current directory: E:/Verilog Project/Architecture/MCPU/MCPU.runs/VRAM_synth_1
+# Command line: vivado.exe -log VRAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VRAM.tcl
+# Log file: E:/Verilog Project/Architecture/MCPU/MCPU.runs/VRAM_synth_1/VRAM.vds
+# Journal file: E:/Verilog Project/Architecture/MCPU/MCPU.runs/VRAM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source VRAM.tcl -notrace

@@ -1,0 +1,161 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Sep 24 15:38:37 2018
+| Host         : ChrisThinkPad running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SWORD_control_sets_placed.rpt
+| Design       : SWORD
+| Device       : xc7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    87 |
+| Unused register locations in slices containing registers |   222 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           14 |
+|      2 |            2 |
+|      4 |            1 |
+|      5 |            2 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            4 |
+|      9 |            3 |
+|     10 |            6 |
+|     14 |            1 |
+|    16+ |           52 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             448 |          210 |
+| No           | No                    | Yes                    |              31 |           17 |
+| No           | Yes                   | No                     |              33 |           10 |
+| Yes          | No                    | No                     |              44 |           21 |
+| Yes          | No                    | Yes                    |            1385 |          758 |
+| Yes          | Yes                   | No                     |             117 |           39 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+|             Clock Signal             |              Enable Signal             |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++--------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+|  U1/PC/Q_reg[0]_0                    |                                        |                                  |                1 |              1 |
+|  Keyboard/INT                        |                                        | U1/INT_clr                       |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[6]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[5]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[4]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[7]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[3]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[2]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  clk_200mhz_BUFG                     |                                        |                                  |                1 |              1 |
+|  Div_BUFG[0]                         |                                        |                                  |                1 |              1 |
+|  Div_BUFG[6]                         |                                        |                                  |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[1]_i_1_n_2            | U9/rst                           |                1 |              1 |
+| ~CPU_clk_BUFG                        | U7/P2LED/S1                            |                                  |                1 |              1 |
+|  Div_BUFG[0]                         | Keyboard/data_in[0]_i_1_n_2            | U9/rst                           |                1 |              1 |
+|  Div_BUFG[6]                         |                                        | U9/rst                           |                2 |              2 |
+| ~CPU_clk_BUFG                        |                                        | U9/rst                           |                1 |              2 |
+|  Div_BUFG[0]                         | Keyboard/cnt[3]_i_1_n_2                | U9/rst                           |                1 |              4 |
+|                                      |                                        | U13/color_reg[11]_i_2_n_2        |                2 |              5 |
+|  U9/clk1_BUFG                        | U9/_n0225_inv1_cepot                   |                                  |                3 |              5 |
+|  U1/IR/E[0]                          |                                        |                                  |                3 |              6 |
+|  Div_BUFG[0]                         |                                        | U9/rst                           |                2 |              7 |
+|  clk_100mhz_BUFG                     | U12/U0/m_data[7]_i_1_n_2               |                                  |                2 |              8 |
+|  clk_100mhz_BUFG                     | U9/counter1[31]_GND_1_o_LessThan_102_o | U9/RSTN_temp_sw_temp[15]_OR_54_o |                3 |              8 |
+|  Text_RAM/color_info_reg[11]_i_2_n_2 |                                        |                                  |                3 |              8 |
+|  Div_BUFG[1]                         |                                        | VGAC/rdn                         |                1 |              8 |
+|  U9/clk1_BUFG                        |                                        |                                  |                5 |              9 |
+|  CPU_clk_BUFG                        |                                        | U9/rst                           |                6 |              9 |
+| ~CPU_clk_BUFG                        | U1/ALUOut/GPIOe0000000_we              |                                  |                7 |              9 |
+|  Div_BUFG[1]                         | VGAC/v_count                           | U9/rst                           |                5 |             10 |
+|  Div_BUFG[0]                         | Keyboard/data[9]_i_1_n_2               | U9/rst                           |                3 |             10 |
+|  clk_100mhz_BUFG                     |                                        | U12/U0/counter[9]_i_1_n_2        |                3 |             10 |
+|  clk_100mhz_BUFG                     |                                        | U9/rst                           |                5 |             10 |
+|  Div_BUFG[1]                         |                                        | U9/rst                           |                4 |             10 |
+|  clk_100mhz_BUFG                     | U12/U0/counter0                        | U12/U0/p_0_in                    |                2 |             10 |
+| ~CPU_clk_BUFG                        | U12/U1/addr_internal[0]_i_1_n_2        | U12/U1/data_internal[31]_i_1_n_2 |                4 |             14 |
+|  clk_100mhz_BUFG                     | U9/_n0243_inv1_cepot_cepot             |                                  |                7 |             16 |
+|  U9/clk1_BUFG                        | U9/counter[31]_GND_1_o_LessThan_5_o    | U9/btn_temp[3]_scan_AND_1_o      |                6 |             21 |
+|  clk_100mhz_BUFG                     | U12/cdcFifo/wrPtr0                     |                                  |                3 |             21 |
+|  Div_BUFG[1]                         |                                        |                                  |               10 |             25 |
+|  CPU_clk_BUFG                        | U1/ALUOut/E[0]                         | U9/rst                           |                9 |             26 |
+|  U1/ALUOut/G_reg[2][0]               |                                        |                                  |               10 |             29 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[1][31][0]           | U9/rst                           |               15 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[4][31][0]           | U9/rst                           |               17 |             32 |
+|  n_1_2432_BUFG                       |                                        |                                  |               17 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/Q_reg[31]_2[0]                   | U9/rst                           |               21 |             32 |
+| ~CPU_clk_BUFG                        | U12/cdcFifo/data_internal_reg[31]      | U12/U1/data_internal[31]_i_1_n_2 |                9 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[6][31][0]           | U9/rst                           |               19 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[27][31][0]          | U9/rst                           |               20 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[8][31][0]           | U9/rst                           |               23 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[26][31][0]          | U9/rst                           |               22 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[29][31][0]          | U9/rst                           |               21 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[23][31][0]          | U9/rst                           |               26 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[31][31][0]          | U9/rst                           |               18 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[13][31][0]          | U9/rst                           |               22 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[14][31][0]          | U9/rst                           |               18 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[17][31][0]          | U9/rst                           |               19 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[30][31][0]          | U9/rst                           |               22 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[18][31][0]          | U9/rst                           |               22 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[12][31][0]          | U9/rst                           |               20 |             32 |
+|  CPU_clk_BUFG                        | U1/PC/Int                              | U9/rst                           |               19 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[10][31][0]          | U9/rst                           |               20 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[21][31][0]          | U9/rst                           |               19 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[20][31][0]          | U9/rst                           |               15 |             32 |
+| ~CPU_clk_BUFG                        | U7/E[0]                                | U9/rst                           |                7 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[19][31][0]          | U9/rst                           |               19 |             32 |
+| ~CPU_clk_BUFG                        | U1/ALUOut/GPIOe0000000_we              | U5/disp_data[31]_i_1_n_2         |               15 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[25][31][0]          | U9/rst                           |               17 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[15][31][0]          | U9/rst                           |               21 |             32 |
+|  Div_BUFG[6]                         | U10/counter0[20]                       | U9/rst                           |                9 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[22][31][0]          | U9/rst                           |               22 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[11][31][0]          | U9/rst                           |               15 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[7][31][0]           | U9/rst                           |               20 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/denom_reg[31][0]                 | U9/rst                           |                5 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[5][31][0]           | U9/rst                           |               19 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[2][31][0]           | U9/rst                           |               17 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[9][31][0]           | U9/rst                           |               21 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[16][31][0]          | U9/rst                           |               18 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[28][31][0]          | U9/rst                           |               18 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[24][31][0]          | U9/rst                           |               18 |             32 |
+|  CPU_clk_BUFG                        | U1/IR/register_reg[3][31][0]           | U9/rst                           |               18 |             32 |
+| ~CPU_clk_BUFG                        |                                        |                                  |               18 |             42 |
+|  CPU_clk_BUFG                        | U1/IR/IRWrite                          | U9/rst                           |               14 |             42 |
+|  n_0_482_BUFG                        |                                        |                                  |               31 |             64 |
+|  CPU_clk_BUFG                        |                                        |                                  |               31 |             64 |
+|  CPU_clk_BUFG                        | U1/HIREG/E[0]                          | U9/rst                           |               32 |             64 |
+|  CPU_clk_BUFG                        | U1/IR/cycle_reg[4]                     | U9/rst                           |               24 |             69 |
+|  clk_100mhz_BUFG                     |                                        |                                  |               78 |            165 |
++--------------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+
+

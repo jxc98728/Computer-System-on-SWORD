@@ -1,0 +1,339 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date             : Mon Sep 24 15:39:43 2018
+| Host             : ChrisThinkPad running 64-bit major release  (build 9200)
+| Command          : report_power -file SWORD_power_routed.rpt -pb SWORD_power_summary_routed.pb -rpx SWORD_power_routed.rpx
+| Design           : SWORD
+| Device           : xc7k325tffg676-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.200        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.035        |
+| Device Static (W)        | 0.164        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 84.6         |
+| Junction Temperature (C) | 25.4         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.004 |        3 |       --- |             --- |
+| Slice Logic              |     0.004 |     8192 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     4767 |    203800 |            2.34 |
+|   CARRY4                 |    <0.001 |       75 |     50950 |            0.15 |
+|   BUFG                   |    <0.001 |        8 |        32 |           25.00 |
+|   Register               |    <0.001 |     2058 |    407600 |            0.50 |
+|   F7/F8 Muxes            |    <0.001 |      483 |    203800 |            0.24 |
+|   LUT as Distributed RAM |    <0.001 |        8 |     64000 |            0.01 |
+|   Others                 |     0.000 |      139 |       --- |             --- |
+| Signals                  |     0.006 |     7418 |       --- |             --- |
+| Block RAM                |     0.005 |     19.5 |       445 |            4.38 |
+| DSPs                     |     0.002 |        8 |       840 |            0.95 |
+| I/O                      |     0.014 |       73 |       400 |           18.25 |
+| Static Power             |     0.164 |          |           |                 |
+| Total                    |     0.200 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.090 |       0.021 |      0.069 |
+| Vccaux    |       1.800 |     0.030 |       0.002 |      0.028 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |
+| Vcco15    |       1.500 |     0.001 |       0.000 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++---------+------------+-----------------+
+| Clock   | Domain     | Constraint (ns) |
++---------+------------+-----------------+
+| clk_cpu | U8/CPU_clk |            20.0 |
++---------+------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++------------------------------------------------+-----------+
+| Name                                           | Power (W) |
++------------------------------------------------+-----------+
+| SWORD                                          |     0.035 |
+|   Keyboard                                     |    <0.001 |
+|   RAM                                          |     0.004 |
+|     U0                                         |     0.004 |
+|       inst_blk_mem_gen                         |     0.004 |
+|         gnbram.gnativebmg.native_blk_mem_gen   |     0.004 |
+|           valid.cstr                           |     0.004 |
+|             has_mux_a.A                        |    <0.001 |
+|             ramloop[0].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[10].ram.r                  |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[11].ram.r                  |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[12].ram.r                  |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[13].ram.r                  |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[14].ram.r                  |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[15].ram.r                  |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[1].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[2].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[3].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[4].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[5].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[6].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[7].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[8].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|             ramloop[9].ram.r                   |    <0.001 |
+|               prim_init.ram                    |    <0.001 |
+|   Text_RAM                                     |     0.001 |
+|     FONT                                       |    <0.001 |
+|       U0                                       |    <0.001 |
+|         inst_blk_mem_gen                       |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen |    <0.001 |
+|             valid.cstr                         |    <0.001 |
+|               ramloop[0].ram.r                 |    <0.001 |
+|                 prim_init.ram                  |    <0.001 |
+|     RAM_Text                                   |    <0.001 |
+|       U0                                       |    <0.001 |
+|         inst_blk_mem_gen                       |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen |    <0.001 |
+|             valid.cstr                         |    <0.001 |
+|               bindec_a.bindec_inst_a           |    <0.001 |
+|               has_mux_b.B                      |    <0.001 |
+|               ramloop[0].ram.r                 |    <0.001 |
+|                 prim_init.ram                  |    <0.001 |
+|               ramloop[1].ram.r                 |    <0.001 |
+|                 prim_init.ram                  |    <0.001 |
+|               ramloop[2].ram.r                 |    <0.001 |
+|                 prim_init.ram                  |    <0.001 |
+|   U1                                           |     0.010 |
+|     A0                                         |     0.003 |
+|       D1                                       |    <0.001 |
+|       M0                                       |     0.001 |
+|         U0                                     |     0.001 |
+|           i_mult                               |     0.001 |
+|             gDSP.gDSP_only.iDSP                |     0.001 |
+|       M1                                       |    <0.001 |
+|         U0                                     |    <0.001 |
+|           i_mult                               |    <0.001 |
+|             gDSP.gDSP_only.iDSP                |    <0.001 |
+|     A1                                         |     0.004 |
+|     A2                                         |    <0.001 |
+|     ALUOut                                     |    <0.001 |
+|     DataReg                                    |    <0.001 |
+|     EPCReg                                     |    <0.001 |
+|     HIREG                                      |    <0.001 |
+|     IR                                         |    <0.001 |
+|     LOREG                                      |    <0.001 |
+|     M0                                         |    <0.001 |
+|     M1                                         |    <0.001 |
+|       XLXI_2                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_3                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_4                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_5                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|     M2                                         |    <0.001 |
+|     M3                                         |    <0.001 |
+|     PC                                         |    <0.001 |
+|   U10                                          |    <0.001 |
+|   U12                                          |    <0.001 |
+|     U0                                         |    <0.001 |
+|     U1                                         |    <0.001 |
+|     cdcFifo                                    |    <0.001 |
+|       data_reg_0_31_0_5                        |    <0.001 |
+|       data_reg_0_31_6_7                        |    <0.001 |
+|   U13                                          |     0.001 |
+|     FONT1                                      |    <0.001 |
+|       U0                                       |    <0.001 |
+|         inst_blk_mem_gen                       |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen |    <0.001 |
+|             valid.cstr                         |    <0.001 |
+|               ramloop[0].ram.r                 |    <0.001 |
+|                 prim_init.ram                  |    <0.001 |
+|   U2                                           |    <0.001 |
+|   U3                                           |    <0.001 |
+|     XLXI_1                                     |    <0.001 |
+|       XLXI_1                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_2                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|     XLXI_14                                    |    <0.001 |
+|     XLXI_2                                     |    <0.001 |
+|   U4                                           |    <0.001 |
+|   U5                                           |    <0.001 |
+|     MUX1_DispData                              |    <0.001 |
+|       XLXI_2                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_3                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_4                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|       XLXI_5                                   |    <0.001 |
+|         XLXI_3                                 |    <0.001 |
+|         XLXI_4                                 |    <0.001 |
+|         XLXI_46                                |    <0.001 |
+|         XLXI_47                                |    <0.001 |
+|     MUX2_Blink                                 |    <0.001 |
+|       XLXI_3                                   |    <0.001 |
+|       XLXI_46                                  |    <0.001 |
+|     MUX2_Point                                 |    <0.001 |
+|       XLXI_3                                   |    <0.001 |
+|       XLXI_4                                   |    <0.001 |
+|       XLXI_46                                  |    <0.001 |
+|       XLXI_47                                  |    <0.001 |
+|   U6                                           |    <0.001 |
+|     XLXI_1                                     |    <0.001 |
+|     XLXI_2                                     |    <0.001 |
+|       HTS0                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS1                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS2                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS3                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS4                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS5                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS6                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|       HTS7                                     |    <0.001 |
+|         MSEG                                   |    <0.001 |
+|   U7                                           |    <0.001 |
+|     P2LED                                      |    <0.001 |
+|   U8                                           |    <0.001 |
+|   U9                                           |    <0.001 |
+|   VGAC                                         |     0.002 |
++------------------------------------------------+-----------+
+
+

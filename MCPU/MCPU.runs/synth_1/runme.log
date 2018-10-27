@@ -1,0 +1,1246 @@
+
+*** Running vivado
+    with args -log SWORD.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SWORD.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source SWORD.tcl -notrace
+Command: synth_design -top SWORD -part xc7k325tffg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18396 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 450.789 ; gain = 100.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/SWORD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19487]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (1#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:19487]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [E:/Verilog Project/Hardware System/Test/Test.srcs/sources_1/imports/IOTest-src/vga.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (2#1) [E:/Verilog Project/Hardware System/Test/Test.srcs/sources_1/imports/IOTest-src/vga.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VRAM' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/VRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VRAM' (3#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/VRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'VRAM_Text' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/VRAM_Text.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/VRAM_Text.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/VRAM_Text.v:98]
+INFO: [Synth 8-6157] synthesizing module 'Text_RAM' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/Text_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Text_RAM' (4#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/Text_RAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FONT' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/FONT_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FONT' (5#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/FONT_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VRAM_Text' (6#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/VRAM_Text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PS2' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/PS2.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'PS2' (7#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/PS2.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Seg7_Dev_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:604]
+INFO: [Synth 8-6157] synthesizing module 'ScanSync_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:528]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_8_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:383]
+INFO: [Synth 8-6157] synthesizing module 'MUX441_sch_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:259]
+INFO: [Synth 8-6157] synthesizing module 'INV' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22581]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (8#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22581]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (9#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30943]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (10#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30943]
+INFO: [Synth 8-6155] done synthesizing module 'MUX441_sch_MUSER_SWORD' (11#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:259]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30849]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (12#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30849]
+INFO: [Synth 8-6155] done synthesizing module 'MUX8T1_8_MUSER_SWORD' (13#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:383]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:52074]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (14#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:52074]
+INFO: [Synth 8-6157] synthesizing module 'GND' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:4944]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (15#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:4944]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:569]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (16#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:569]
+INFO: [Synth 8-6155] done synthesizing module 'ScanSync_MUSER_SWORD' (17#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:528]
+INFO: [Synth 8-6157] synthesizing module 'MC14495_ZJU_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:38]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (18#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:110]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (19#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:62]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30895]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (20#1) [D:/XiLinx/Vivado/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30895]
+INFO: [Synth 8-6155] done synthesizing module 'MC14495_ZJU_MUSER_SWORD' (21#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:38]
+INFO: [Synth 8-6157] synthesizing module 'Flicker_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Flicker_MUSER_SWORD' (22#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Seg_map' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Seg_map.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Seg_map' (23#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Seg_map.v:21]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_8' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX2T1_8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_8' (24#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX2T1_8.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Seg7_Dev_MUSER_SWORD' (25#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:604]
+INFO: [Synth 8-6157] synthesizing module 'SAnti_jitter' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SAnti_jitter_IO.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'SAnti_jitter' (26#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SAnti_jitter_IO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'SEnter_2_32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SEnter_2_32_IO.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'SEnter_2_32' (27#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SEnter_2_32_IO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Display_MUSER_SWORD' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:664]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/P2S_IO.v:21]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (28#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/P2S_IO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/HexTo8Seg.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Hex2Seg.v:21]
+INFO: [Synth 8-6157] synthesizing module 'MC14495_ZJU' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MC14495_ZJU.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'MC14495_ZJU' (29#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MC14495_ZJU.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (30#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Hex2Seg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (31#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/HexTo8Seg.v:21]
+INFO: [Synth 8-6157] synthesizing module 'SSeg_map' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SSeg_map.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg_map' (32#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SSeg_map.v:22]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_64' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX2T1_64.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_64' (33#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX2T1_64.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Display_MUSER_SWORD' (34#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Display.v:664]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Multi_8CH32.v:21]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_32.vf:292]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_8_sch_MUSER_MUX8T1_32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_32.vf:147]
+INFO: [Synth 8-6157] synthesizing module 'MUX441_sch_MUSER_MUX8T1_32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_32.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX441_sch_MUSER_MUX8T1_32' (35#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_32.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX8T1_8_sch_MUSER_MUX8T1_32' (36#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_32.vf:147]
+INFO: [Synth 8-6155] done synthesizing module 'MUX8T1_32' (37#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_32.vf:292]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_8' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_8.vf:147]
+INFO: [Synth 8-6157] synthesizing module 'MUX441_sch_MUSER_MUX8T1_8' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_8.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX441_sch_MUSER_MUX8T1_8' (38#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_8.vf:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX8T1_8' (39#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX8T1_8.vf:147]
+INFO: [Synth 8-6155] done synthesizing module 'Multi_8CH32' (40#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Multi_8CH32.v:21]
+INFO: [Synth 8-6157] synthesizing module 'GPIO' [C:/Users/T460P/Downloads/GPIO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'LEDP2S' [C:/Users/T460P/Downloads/LEDP2S_IO.v:21]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 4 - type: integer 
+	Parameter DIR bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'LEDP2S' (41#1) [C:/Users/T460P/Downloads/LEDP2S_IO.v:21]
+WARNING: [Synth 8-5788] Register GPIOf0_reg in module GPIO is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/T460P/Downloads/GPIO.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO' (42#1) [C:/Users/T460P/Downloads/GPIO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'PIO' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/PIO_IO.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'PIO' (43#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/PIO_IO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'MIO_BUS' (44#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:21]
+WARNING: [Synth 8-6014] Unused sequential element counter1_Lock_reg was removed.  [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element counter2_Lock_reg was removed.  [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element M1_reg was removed.  [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:50]
+WARNING: [Synth 8-6014] Unused sequential element M2_reg was removed.  [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:51]
+WARNING: [Synth 8-5788] Register M0_reg in module Counter_x is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:49]
+WARNING: [Synth 8-5788] Register clr0_reg in module Counter_x is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:71]
+WARNING: [Synth 8-3848] Net counter1 in module/entity Counter_x does not have driver. [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:36]
+WARNING: [Synth 8-3848] Net counter2 in module/entity Counter_x does not have driver. [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_x' (45#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Counter_3_IO.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Reprog' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:7]
+	Parameter ADDR_WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:132]
+	Parameter COUNTER_MSB bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (46#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:132]
+INFO: [Synth 8-6157] synthesizing module 'AxisFifo' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:85]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH_BITS bound to: 5 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AxisFifo' (47#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:85]
+INFO: [Synth 8-6157] synthesizing module 'Reprog_upscaler' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:37]
+	Parameter ADDR_WIDTH bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Reprog_upscaler' (48#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'Reprog' (49#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/SDK/Reprog.v:7]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (50#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/clk_div.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (51#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/clk_div.v:21]
+INFO: [Synth 8-6157] synthesizing module 'MCPU' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/MCPU2.v:3]
+	Parameter AND bound to: 4'b0000 
+	Parameter OR bound to: 4'b0001 
+	Parameter ADD bound to: 4'b0010 
+	Parameter SUB bound to: 4'b0011 
+	Parameter XOR bound to: 4'b0100 
+	Parameter SLL bound to: 4'b0101 
+	Parameter SRL bound to: 4'b0110 
+	Parameter SLT bound to: 4'b0111 
+	Parameter NOR bound to: 4'b1000 
+	Parameter NOP bound to: 4'b1001 
+	Parameter MULT bound to: 4'b1010 
+	Parameter MULTU bound to: 4'b1011 
+	Parameter DIV bound to: 4'b1100 
+	Parameter DIVU bound to: 4'b1101 
+	Parameter START bound to: 5'b11111 
+	Parameter IF bound to: 5'b00000 
+	Parameter ID bound to: 5'b00001 
+	Parameter EX_R bound to: 5'b00010 
+	Parameter EX_MEM bound to: 5'b00011 
+	Parameter EX_I bound to: 5'b00100 
+	Parameter EX_BEQ bound to: 5'b00101 
+	Parameter EX_BNE bound to: 5'b00110 
+	Parameter EX_J bound to: 5'b00111 
+	Parameter EX_JAL bound to: 5'b01000 
+	Parameter EX_JR bound to: 5'b01001 
+	Parameter EX_JALR bound to: 5'b01010 
+	Parameter EX_ERET bound to: 5'b01011 
+	Parameter EX_INT bound to: 5'b01100 
+	Parameter MEM_RD bound to: 5'b01101 
+	Parameter MEM_SW bound to: 5'b01110 
+	Parameter MEM_SH bound to: 5'b10110 
+	Parameter MEM_SB bound to: 5'b10111 
+	Parameter WB_R bound to: 5'b01111 
+	Parameter WB_I bound to: 5'b10000 
+	Parameter WB_LW bound to: 5'b10001 
+	Parameter WB_LUI bound to: 5'b10010 
+	Parameter WB_LB bound to: 5'b10011 
+	Parameter WB_LH bound to: 5'b10100 
+	Parameter WB_LHU bound to: 5'b10101 
+	Parameter WB_MFLO bound to: 5'b11000 
+	Parameter WB_MFHI bound to: 5'b11001 
+	Parameter WB_HILO bound to: 5'b11010 
+	Parameter ERROR bound to: 5'b11110 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/MCPU2.v:484]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/MCPU2.v:516]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_5' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX4T1_5.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_5' (52#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX4T1_5.v:21]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX4T1_32.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_32' (53#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/MUX4T1_32.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Signed_Multiplier' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/Signed_Multiplier_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Signed_Multiplier' (54#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/Signed_Multiplier_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Unsigned_Multiplier' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/Unsigned_Multiplier_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Unsigned_Multiplier' (55#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/Unsigned_Multiplier_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Unsigned_Divider' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Unsigned_Divider' (56#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v:23]
+WARNING: [Synth 8-3848] Net overflow in module/entity ALU does not have driver. [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/ALU.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (57#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Regs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (58#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/Regs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LoadMask' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/ByteMask.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LoadMask' (59#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/ByteMask.v:3]
+INFO: [Synth 8-6157] synthesizing module 'StoreMask' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/StoreMask.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'StoreMask' (60#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/StoreMask.v:3]
+INFO: [Synth 8-6157] synthesizing module 'REG32' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/REG32.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REG32' (61#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/REG32.v:3]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity MCPU does not have driver. [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/MCPU2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'MCPU' (62#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/MCPU2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Debug' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Debug.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Debug.v:911]
+INFO: [Synth 8-6157] synthesizing module 'FONT1' [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/FONT1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FONT1' (63#1) [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/.Xil/Vivado-12192-ChrisThinkPad/realtime/FONT1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Debug' (64#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Debug.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SWORD' (65#1) [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/SWORD.v:23]
+WARNING: [Synth 8-3331] design ALU has unconnected port overflow
+WARNING: [Synth 8-3331] design MCPU has unconnected port CPU_MIO
+WARNING: [Synth 8-3331] design clk_div has unconnected port rst
+WARNING: [Synth 8-3331] design Counter_x has unconnected port counter1_OUT
+WARNING: [Synth 8-3331] design Counter_x has unconnected port counter2_OUT
+WARNING: [Synth 8-3331] design Counter_x has unconnected port clk1
+WARNING: [Synth 8-3331] design Counter_x has unconnected port clk2
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port clk
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port rst
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[27]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[26]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[25]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[24]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[23]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[22]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[21]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[20]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port addr_bus[19]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[15]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[14]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[13]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[12]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[11]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[10]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[9]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[8]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[7]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[6]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[5]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[4]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[3]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[2]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[1]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[0]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port key_ready
+WARNING: [Synth 8-3331] design Multi_8CH32 has unconnected port rst
+WARNING: [Synth 8-3331] design Seg_map has unconnected port Scan[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 517.078 ; gain = 166.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 517.078 ; gain = 166.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 517.078 ; gain = 166.895
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1922 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Text_RAM/Text_RAM/Text_RAM_in_context.xdc] for cell 'Text_RAM/RAM_Text'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Text_RAM/Text_RAM/Text_RAM_in_context.xdc] for cell 'Text_RAM/RAM_Text'
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/FONT/FONT/FONT_in_context.xdc] for cell 'Text_RAM/FONT'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/FONT/FONT/FONT_in_context.xdc] for cell 'Text_RAM/FONT'
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/VRAM/VRAM/VRAM_in_context.xdc] for cell 'Video_RAM'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/VRAM/VRAM/VRAM_in_context.xdc] for cell 'Video_RAM'
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/RAM_B/RAM_B/RAM_B_in_context.xdc] for cell 'RAM'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/RAM_B/RAM_B/RAM_B_in_context.xdc] for cell 'RAM'
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Signed_Multiplier/Signed_Multiplier/Signed_Multiplier_in_context.xdc] for cell 'U1/A0/M0'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Signed_Multiplier/Signed_Multiplier/Signed_Multiplier_in_context.xdc] for cell 'U1/A0/M0'
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Unsigned_Multiplier/Unsigned_Multiplier/Unsigned_Multiplier_in_context.xdc] for cell 'U1/A0/M1'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Unsigned_Multiplier/Unsigned_Multiplier/Unsigned_Multiplier_in_context.xdc] for cell 'U1/A0/M1'
+Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/FONT1/FONT1/FONT1_in_context.xdc] for cell 'U13/FONT1'
+Finished Parsing XDC File [e:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/FONT1/FONT1/FONT1_in_context.xdc] for cell 'U13/FONT1'
+Parsing XDC File [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/constrs_1/new/SWORD.xdc]
+WARNING: [Vivado 12-507] No nets matched 'U8/CPU_clk'. [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/constrs_1/new/SWORD.xdc:7]
+Finished Parsing XDC File [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/constrs_1/new/SWORD.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/constrs_1/new/SWORD.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/SWORD_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/constrs_1/new/SWORD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SWORD_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SWORD_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1921 instances were transformed.
+  AND2 => LUT2: 1162 instances
+  AND3 => LUT3: 99 instances
+  AND4 => LUT4: 81 instances
+  BUF => LUT1: 10 instances
+  INV => LUT1: 155 instances
+  OR2 => LUT2: 159 instances
+  OR3 => LUT3: 27 instances
+  OR4 => LUT4: 228 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 921.766 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Text_RAM/RAM_Text. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Text_RAM/FONT. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_RAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for RAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/A0/M0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U1/A0/M1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U13/FONT1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "color_info" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "color_info" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "key_break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "key_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "key_expand" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cpu_data4bus" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "text_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "we_internal" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "active" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "finish" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DivEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "state" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ALU_operation" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_operation" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "color" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'color_info_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/VRAM_Text.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'text_addr_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'text_data_in_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:123]
+WARNING: [Synth 8-327] inferring latch for variable 'text_we_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'graphic_or_text_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'Cpu_data4bus_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/MIO_BUS.v:83]
+WARNING: [Synth 8-327] inferring latch for variable 'HI_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/ALU.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'LO_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/ALU.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_operation_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/MCPU2.v:463]
+WARNING: [Synth 8-327] inferring latch for variable 'color_reg' [E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Debug.v:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 5     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 44    
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---RAMs : 
+	              256 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   5 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 3     
+	   4 Input     33 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 16    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 7     
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
+	   8 Input     14 Bit        Muxes := 1     
+	  14 Input     12 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   7 Input     12 Bit        Muxes := 1     
+	 742 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	  17 Input      5 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 2     
+	  13 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  29 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  30 Input      3 Bit        Muxes := 1     
+	  29 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 2     
+	  29 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 66    
+	  14 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 4     
+	  30 Input      1 Bit        Muxes := 3     
+	  29 Input      1 Bit        Muxes := 11    
+	  13 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SWORD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module VRAM_Text 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     12 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module PS2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 1     
+Module Seg_map 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module MUX2T1_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module MUX2T1_64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module Multi_8CH32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+Module GPIO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module MIO_BUS 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   8 Input     19 Bit        Muxes := 1     
+	   8 Input     14 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module Counter_x 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     33 Bit        Muxes := 1     
+	   2 Input     33 Bit        Muxes := 3     
+	   4 Input     33 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module AxisFifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 4     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
++---RAMs : 
+	              256 Bit         RAMs := 1     
+Module Reprog_upscaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module clk_div 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module MUX4T1_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module MUX4T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Unsigned_Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module Regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module LoadMask 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module StoreMask 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+Module REG32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MCPU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  17 Input      5 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  29 Input      4 Bit        Muxes := 1     
+	  30 Input      3 Bit        Muxes := 1     
+	  29 Input      3 Bit        Muxes := 1     
+	  29 Input      2 Bit        Muxes := 5     
+	  30 Input      1 Bit        Muxes := 3     
+	  29 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module Debug 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   7 Input     12 Bit        Muxes := 1     
+	 742 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element U7/GPIOf0_reg was removed.  [C:/Users/T460P/Downloads/GPIO.v:35]
+INFO: [Synth 8-5546] ROM "VGAC/v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Keyboard/data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Keyboard/key_break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Keyboard/key_expand" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design ALU has unconnected port overflow
+WARNING: [Synth 8-3331] design MCPU has unconnected port CPU_MIO
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[7]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[6]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[5]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[4]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[3]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[2]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[1]' (FDE) to 'U5/cpu_blink_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[8]' (LDC) to 'U13/color_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[9]' (LDC) to 'U13/color_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Text_RAM/color_info_reg[9]' (LD) to 'Text_RAM/color_info_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[4]' (LDC) to 'U13/color_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[5]' (LDC) to 'U13/color_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Text_RAM/color_info_reg[5]' (LD) to 'Text_RAM/color_info_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[0]' (LDC) to 'U13/color_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[1]' (LDC) to 'U13/color_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Text_RAM/color_info_reg[1]' (LD) to 'Text_RAM/color_info_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U13/color_reg[2]' (LDC) to 'U13/color_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Text_RAM/color_info_reg[2]' (LD) to 'Text_RAM/color_info_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAC/B_reg[1]' (FDR) to 'VGAC/B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAC/G_reg[1]' (FDR) to 'VGAC/G_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGAC/R_reg[1]' (FDR) to 'VGAC/R_reg[2]'
+INFO: [Synth 8-3886] merging instance 'VGAC/R_reg[2]' (FDR) to 'VGAC/R_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[23]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[22]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[21]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[20]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[19]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[18]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[17]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[16]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[15]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[14]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[13]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[12]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[11]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[10]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[9]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[8]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[7]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[6]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[5]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[4]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[3]) is unused and will be removed from module SWORD.
+WARNING: [Synth 8-3332] Sequential element (U10/counter_Ctrl_reg[0]) is unused and will be removed from module SWORD.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|MCPU        | INT_ena    | 32x1          | LUT            | 
+|MCPU        | ALUSrcA    | 32x1          | LUT            | 
+|MCPU        | RegWrite   | 32x1          | LUT            | 
+|MCPU        | INT_ena    | 32x1          | LUT            | 
+|MCPU        | ALUSrcA    | 32x1          | LUT            | 
+|MCPU        | RegWrite   | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------+-----------+----------------------+--------------+
+|SWORD       | U12/cdcFifo/data_reg | Implied   | 32 x 8               | RAM32M x 2   | 
++------------+----------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:21 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 921.766 ; gain = 571.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------+-----------+----------------------+--------------+
+|SWORD       | U12/cdcFifo/data_reg | Implied   | 32 x 8               | RAM32M x 2   | 
++------------+----------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |VRAM                |         1|
+|2     |SAnti_jitter        |         1|
+|3     |SEnter_2_32         |         1|
+|4     |PIO                 |         1|
+|5     |RAM_B               |         1|
+|6     |Text_RAM            |         1|
+|7     |FONT                |         1|
+|8     |Signed_Multiplier   |         1|
+|9     |Unsigned_Multiplier |         1|
+|10    |FONT1               |         1|
+|11    |P2S                 |         1|
+|12    |LEDP2S              |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |FONT                |     1|
+|2     |FONT1               |     1|
+|3     |LEDP2S              |     1|
+|4     |P2S                 |     1|
+|5     |PIO                 |     1|
+|6     |RAM_B               |     1|
+|7     |SAnti_jitter        |     1|
+|8     |SEnter_2_32         |     1|
+|9     |Signed_Multiplier   |     1|
+|10    |Text_RAM            |     1|
+|11    |Unsigned_Multiplier |     1|
+|12    |VRAM                |     1|
+|13    |AND2                |  1094|
+|14    |AND3                |    99|
+|15    |AND4                |    81|
+|16    |BUF                 |    10|
+|17    |BUFG                |     8|
+|18    |CARRY4              |    56|
+|19    |INV                 |    55|
+|20    |LUT1                |    61|
+|21    |LUT2                |   362|
+|22    |LUT3                |   261|
+|23    |LUT4                |   251|
+|24    |LUT5                |   491|
+|25    |LUT6                |  2282|
+|26    |MUXF7               |   481|
+|27    |MUXF8               |     1|
+|28    |OR2                 |   153|
+|29    |OR3                 |    27|
+|30    |OR4                 |   216|
+|31    |RAM32M              |     2|
+|32    |FDCE                |  1389|
+|33    |FDPE                |     9|
+|34    |FDRE                |   275|
+|35    |FDSE                |    15|
+|36    |LD                  |   140|
+|37    |LDC                 |     5|
+|38    |IBUF                |    24|
+|39    |IBUFDS              |     1|
+|40    |OBUF                |    47|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+------------------+--------------------------------+------+
+|      |Instance          |Module                          |Cells |
++------+------------------+--------------------------------+------+
+|1     |top               |                                |  8236|
+|2     |  Keyboard        |PS2                             |    52|
+|3     |  Text_RAM        |VRAM_Text                       |    40|
+|4     |  U1              |MCPU                            |  5177|
+|5     |    A0            |ALU                             |   473|
+|6     |      D1          |Unsigned_Divider                |   281|
+|7     |    A1            |Regs                            |  3221|
+|8     |    A2            |LoadMask                        |    40|
+|9     |    ALUOut        |REG32                           |   165|
+|10    |    DataReg       |REG32_46                        |    32|
+|11    |    EPCReg        |REG32_47                        |    47|
+|12    |    HIREG         |REG32_48                        |    55|
+|13    |    IR            |REG32_49                        |   341|
+|14    |    LOREG         |REG32_50                        |    53|
+|15    |    M0            |MUX4T1_5                        |     5|
+|16    |    M1            |MUX8T1_32_51                    |   488|
+|17    |      XLXI_2      |MUX8T1_8_sch_MUSER_MUX8T1_32_54 |   120|
+|18    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_70   |    24|
+|19    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_71   |    24|
+|20    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_72   |    24|
+|21    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_73   |    24|
+|22    |      XLXI_3      |MUX8T1_8_sch_MUSER_MUX8T1_32_55 |   120|
+|23    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_66   |    24|
+|24    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_67   |    24|
+|25    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_68   |    24|
+|26    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_69   |    24|
+|27    |      XLXI_4      |MUX8T1_8_sch_MUSER_MUX8T1_32_56 |   120|
+|28    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_62   |    24|
+|29    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_63   |    24|
+|30    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_64   |    24|
+|31    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_65   |    24|
+|32    |      XLXI_5      |MUX8T1_8_sch_MUSER_MUX8T1_32_57 |   128|
+|33    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_58   |    30|
+|34    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_59   |    24|
+|35    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_60   |    24|
+|36    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_61   |    24|
+|37    |    M2            |MUX4T1_32                       |    40|
+|38    |    M3            |MUX4T1_32_52                    |    35|
+|39    |    PC            |REG32_53                        |   146|
+|40    |  U10             |Counter_x                       |   149|
+|41    |  U12             |Reprog                          |   197|
+|42    |    U0            |UART_RX                         |    62|
+|43    |    U1            |Reprog_upscaler                 |    90|
+|44    |    cdcFifo       |AxisFifo                        |    45|
+|45    |  U13             |Debug                           |   257|
+|46    |  U3              |Seg7_Dev_MUSER_SWORD            |   216|
+|47    |    XLXI_1        |ScanSync_MUSER_SWORD            |   167|
+|48    |      XLXI_1      |MUX8T1_8_MUSER_SWORD            |    97|
+|49    |        XLXI_3    |MUX441_sch_MUSER_SWORD_42       |    16|
+|50    |        XLXI_4    |MUX441_sch_MUSER_SWORD_43       |    14|
+|51    |        XLXI_46   |MUX441_sch_MUSER_SWORD_44       |    24|
+|52    |        XLXI_47   |MUX441_sch_MUSER_SWORD_45       |    24|
+|53    |      XLXI_2      |MUX8T1_8_MUSER_SWORD_40         |    60|
+|54    |        XLXI_3    |MUX441_sch_MUSER_SWORD          |    24|
+|55    |        XLXI_4    |MUX441_sch_MUSER_SWORD_41       |    24|
+|56    |    XLXI_14       |Flicker_MUSER_SWORD             |     1|
+|57    |    XLXI_2        |MC14495_ZJU_MUSER_SWORD         |    48|
+|58    |  U4              |MIO_BUS                         |    76|
+|59    |  U5              |Multi_8CH32                     |   773|
+|60    |    MUX1_DispData |MUX8T1_32                       |   491|
+|61    |      XLXI_2      |MUX8T1_8_sch_MUSER_MUX8T1_32    |   123|
+|62    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_36   |    24|
+|63    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_37   |    24|
+|64    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_38   |    24|
+|65    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_39   |    24|
+|66    |      XLXI_3      |MUX8T1_8_sch_MUSER_MUX8T1_32_22 |   121|
+|67    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_32   |    24|
+|68    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_33   |    24|
+|69    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_34   |    24|
+|70    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_35   |    24|
+|71    |      XLXI_4      |MUX8T1_8_sch_MUSER_MUX8T1_32_23 |   122|
+|72    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32_28   |    24|
+|73    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_29   |    24|
+|74    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_30   |    24|
+|75    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_31   |    24|
+|76    |      XLXI_5      |MUX8T1_8_sch_MUSER_MUX8T1_32_24 |   125|
+|77    |        XLXI_3    |MUX441_sch_MUSER_MUX8T1_32      |    26|
+|78    |        XLXI_4    |MUX441_sch_MUSER_MUX8T1_32_25   |    24|
+|79    |        XLXI_46   |MUX441_sch_MUSER_MUX8T1_32_26   |    24|
+|80    |        XLXI_47   |MUX441_sch_MUSER_MUX8T1_32_27   |    24|
+|81    |    MUX2_Blink    |MUX8T1_8                        |   120|
+|82    |      XLXI_3      |MUX441_sch_MUSER_MUX8T1_8_18    |    24|
+|83    |      XLXI_4      |MUX441_sch_MUSER_MUX8T1_8_19    |    24|
+|84    |      XLXI_46     |MUX441_sch_MUSER_MUX8T1_8_20    |    24|
+|85    |      XLXI_47     |MUX441_sch_MUSER_MUX8T1_8_21    |    24|
+|86    |    MUX2_Point    |MUX8T1_8_14                     |   120|
+|87    |      XLXI_3      |MUX441_sch_MUSER_MUX8T1_8       |    24|
+|88    |      XLXI_4      |MUX441_sch_MUSER_MUX8T1_8_15    |    24|
+|89    |      XLXI_46     |MUX441_sch_MUSER_MUX8T1_8_16    |    24|
+|90    |      XLXI_47     |MUX441_sch_MUSER_MUX8T1_8_17    |    24|
+|91    |  U6              |Display_MUSER_SWORD             |   388|
+|92    |    XLXI_2        |HexTo8SEG                       |   384|
+|93    |      HTS0        |Hex2Seg                         |    48|
+|94    |        MSEG      |MC14495_ZJU_13                  |    48|
+|95    |      HTS1        |Hex2Seg_0                       |    48|
+|96    |        MSEG      |MC14495_ZJU_12                  |    48|
+|97    |      HTS2        |Hex2Seg_1                       |    48|
+|98    |        MSEG      |MC14495_ZJU_11                  |    48|
+|99    |      HTS3        |Hex2Seg_2                       |    48|
+|100   |        MSEG      |MC14495_ZJU_10                  |    48|
+|101   |      HTS4        |Hex2Seg_3                       |    48|
+|102   |        MSEG      |MC14495_ZJU_9                   |    48|
+|103   |      HTS5        |Hex2Seg_4                       |    48|
+|104   |        MSEG      |MC14495_ZJU_8                   |    48|
+|105   |      HTS6        |Hex2Seg_5                       |    48|
+|106   |        MSEG      |MC14495_ZJU_7                   |    48|
+|107   |      HTS7        |Hex2Seg_6                       |    48|
+|108   |        MSEG      |MC14495_ZJU                     |    48|
+|109   |  U7              |GPIO                            |    24|
+|110   |  U8              |clk_div                         |    50|
+|111   |  VGAC            |VGA                             |   567|
++------+------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1025.258 ; gain = 675.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 1025.258 ; gain = 270.387
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1025.258 ; gain = 675.074
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SAnti_jitter.ngc ...
+WARNING:NetListWriters:298 - No output is written to SAnti_jitter.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file SAnti_jitter.edif ...
+ngc2edif: Total memory usage is 4325244 kilobytes
+
+Reading core file 'E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SAnti_jitter.ngc' for (cell view 'SAnti_jitter', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_6e1112ab.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_6e1112ab.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design SEnter_2_32.ngc ...
+WARNING:NetListWriters:298 - No output is written to SEnter_2_32.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Ai[31]_Ai[31]_mux_48_OUT[31 : 2] on
+   block SEnter_2_32 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Bi[31]_Bi[31]_mux_49_OUT[31 : 2] on
+   block SEnter_2_32 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file SEnter_2_32.edif ...
+ngc2edif: Total memory usage is 4324220 kilobytes
+
+Reading core file 'E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/SEnter_2_32.ngc' for (cell view 'SEnter_2_32', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SEnter_2_32_ngc_6e1112ab.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SEnter_2_32_ngc_6e1112ab.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design PIO.ngc ...
+WARNING:NetListWriters:298 - No output is written to PIO.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file PIO.edif ...
+ngc2edif: Total memory usage is 4324220 kilobytes
+
+Reading core file 'E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/PIO.ngc' for (cell view 'PIO', library 'work')
+Parsing EDIF File [./.ngc2edfcache/PIO_ngc_6e1112ab.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/PIO_ngc_6e1112ab.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design P2S.ngc ...
+WARNING:NetListWriters:298 - No output is written to P2S.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file P2S.edif ...
+ngc2edif: Total memory usage is 4324476 kilobytes
+
+Reading core file 'E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/OExp4/P2S.ngc' for (cell view 'P2S', library 'work')
+Parsing EDIF File [./.ngc2edfcache/P2S_ngc_6e1112ab.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/P2S_ngc_6e1112ab.edif]
+Release 14.7 - ngc2edif P_INT.20180321 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design LEDP2S.ngc ...
+WARNING:NetListWriters:298 - No output is written to LEDP2S.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file LEDP2S.edif ...
+ngc2edif: Total memory usage is 4324220 kilobytes
+
+Reading core file 'C:/Users/T460P/Downloads/LEDP2S.ngc' for (cell view 'LEDP2S', library 'work')
+Parsing EDIF File [./.ngc2edfcache/LEDP2S_ngc_3b908271.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/LEDP2S_ngc_3b908271.edif]
+INFO: [Netlist 29-17] Analyzing 2922 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180321
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2224 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 27 instances
+  AND2 => LUT2: 1094 instances
+  AND3 => LUT3: 99 instances
+  AND4 => LUT4: 81 instances
+  BUF => LUT1: 10 instances
+  FD => FDRE: 205 instances
+  FDC => FDCE: 10 instances
+  FDCE_1 => FDCE (inverted pins: C): 7 instances
+  FDE => FDRE: 48 instances
+  FDE_1 => FDRE (inverted pins: C): 22 instances
+  FDPE_1 => FDPE (inverted pins: C): 3 instances
+  INV => LUT1: 75 instances
+  LD => LDCE: 140 instances
+  LDC => LDCE: 5 instances
+  OR2 => LUT2: 153 instances
+  OR3 => LUT3: 27 instances
+  OR4 => LUT4: 216 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+230 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:41 . Memory (MB): peak = 1025.258 ; gain = 686.547
+INFO: [Common 17-1381] The checkpoint 'E:/Verilog Project/Architecture/MCPU/MCPU.runs/synth_1/SWORD.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SWORD_utilization_synth.rpt -pb SWORD_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1025.258 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 24 15:36:51 2018...

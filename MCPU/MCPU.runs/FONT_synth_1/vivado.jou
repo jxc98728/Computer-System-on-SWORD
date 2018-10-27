@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Fri Aug 31 16:30:10 2018
+# Process ID: 19016
+# Current directory: E:/Verilog Project/Architecture/MCPU/MCPU.runs/FONT_synth_1
+# Command line: vivado.exe -log FONT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FONT.tcl
+# Log file: E:/Verilog Project/Architecture/MCPU/MCPU.runs/FONT_synth_1/FONT.vds
+# Journal file: E:/Verilog Project/Architecture/MCPU/MCPU.runs/FONT_synth_1\vivado.jou
+#-----------------------------------------------------------
+source FONT.tcl -notrace

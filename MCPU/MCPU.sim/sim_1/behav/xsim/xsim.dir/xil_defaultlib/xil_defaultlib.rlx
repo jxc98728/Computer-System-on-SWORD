@@ -1,0 +1,13 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+E:/Verilog Project/Architecture/MCPU/MCPU.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/ALU_test.v,1532717584,verilog,,,,ALU_test,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/signed_multiplier_test.v,1536925046,verilog,,,,signed_multiplier_test,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v,1537273393,verilog,,,,test_unsigned_divisor,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/imports/Desktop/PS2.v,1535797293,verilog,,E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/test_ps2.v,,PS2,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Signed_Multiplier/sim/Signed_Multiplier.vhd,1536743538,vhdl,,,,signed_multiplier,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/ip/Unsigned_Multiplier/sim/Unsigned_Multiplier.vhd,1536744966,vhdl,,,,unsigned_multiplier,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/ALU.v,1532717446,verilog,,E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/ALU_test.v,,ALU,,,,,,,,
+E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sources_1/new/Unsigned_Divider.v,1537273524,verilog,,E:/Verilog Project/Architecture/MCPU/MCPU.srcs/sim_1/new/test_unsigned_divisor.v,,Unsigned_Divider,,,,,,,,
